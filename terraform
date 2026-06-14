@@ -1,9 +1,1 @@
-provider.tf
-vpc.tf
-subnet.tf
-eks.tf
-RDS.tf
-Secuity-groups.tf
-variables.tf
-output.tf
 
