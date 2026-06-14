@@ -1,0 +1,6 @@
+deployments.yaml
+HPA.yaml
+srvice.yaml
+ingress.yaml
+Cluster-Auto.yaml
+pdb.yaml
