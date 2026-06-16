@@ -6,7 +6,7 @@ name: redemption-api
 namespace: redemption
 
 spec:
-replicas: 3
+replicas: 6
 
   strategy:
   type: RollingUpdate
@@ -28,7 +28,7 @@ replicas: 3
       containers:
       - name: redemption-api
 
-        image: 123456789.dkr.ecr.ap-south-1.amazonaws.com/redemption-api:v1
+        image: a99.dkr.ecr.ap-south-1.amazonaws.com/redemption-api:v1
 
         ports:
         - containerPort: 8080
