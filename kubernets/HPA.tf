@@ -1,0 +1,25 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+
+metadata:
+  name: redemption-hpa
+  namespace: redemption
+
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: redemption-api
+
+  minReplicas: 3
+  maxReplicas: 10
+
+  metrics:
+  - type: Resource
+
+    resource:
+      name: cpu
+
+      target:
+        type: Utilization
+        averageUtilization: 80
