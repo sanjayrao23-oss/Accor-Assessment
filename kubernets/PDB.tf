@@ -1,0 +1,13 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+
+metadata:
+  name: redemption-pdb
+  namespace: redemption
+
+spec:
+  minAvailable: 2
+
+  selector:
+    matchLabels:
+      app: redemption-api
