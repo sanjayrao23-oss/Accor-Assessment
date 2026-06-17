@@ -1,59 +1,36 @@
-## Accor Assessment
+# Accor Assessment
 
-## Overview
-
-This repository contains the solution for the Accor SRE assessment.
-
-## Architecture
-
-User → Route53 → CloudFront → AWS WAF → ALB → Ingress → Service → EKS Pods
-
-## Components
-
-- Amazon EKS
-- Redis
-- RDS Multi-AZ
-- HPA
-- Cluster Autoscaler / Karpenter
-- Datadog
-- Prometheus
-- Grafana
+This repository contains my solution for the Accor SRE Assessment.
 
 ## Repository Structure
 
 ### terraform
 
-Infrastructure provisioning:
+Infrastructure components:
 
-- VPC
-- Subnets
-- ALB
-- EKS
-- RDS
-- Redis
+* VPC
+* Public / Private Subnets
+* EKS
+* ALB
+* Redis
+* RDS
 
 ### kubernetes
 
-Application deployment:
+Deployment components:
 
-- Namespace
-- Deployment
-- Service
-- Ingress
-- HPA
-- PDB
+* Namespace
+* Deployment
+* Service
+* HPA
+* PDB
 
-## High Availability
+### ArgoCD
 
-- Multi-AZ worker nodes
-- Multi-AZ RDS
-- HPA
-- Cluster Autoscaler/Karpenter
-- Redis caching
+GitOps deployment configuration.
 
-## Observability
+## Files
 
-- CloudWatch
-- Prometheus
-- Grafana
-- Datadog
+* Accor-Architecture.drawio
+* Accor-Architecture.jpg
+* Accor_Assessment_Sanjay-Rao.pdf
