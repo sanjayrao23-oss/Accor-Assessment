@@ -5,5 +5,7 @@ resource_name vpc
   enable_dns
 
   tags
+{
   name=accor-vpc
+}
 }
