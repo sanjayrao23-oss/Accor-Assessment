@@ -1,6 +1,6 @@
 # Accor Assessment
 
-This repository contains my solution for the Accor SRE Assessment.
+This repository contains requirements cum solution as per the Assessment.
 
 ## Repository Structure
 
